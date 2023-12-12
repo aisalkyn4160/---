@@ -1,0 +1,65 @@
+.autopark-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    row-gap: 60px;
+}
+
+.autopark-item{
+    width: 31%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.autopark-img{
+    width: 100%;
+    height: 266px;
+    overflow: hidden;
+}
+
+.autopark-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.autopark-item h4{
+    text-align: center;
+}
+
+.autopark-item button{
+    text-align: center;
+    padding: 20px 70px;
+}
+
+.autopark-item:hover img{
+    box-shadow: 10px 10px 0 #2C5BAD;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 950px) {
+    .autopark-content{
+        align-items: center;
+        justify-content: center;
+        row-gap: 35px;
+    }
+
+    .autopark-item{
+        width: 290px;
+        gap: 15px;
+    }
+
+    .autopark-img{
+        height: 203px;
+    }
+    .autopark-img img{
+        height: auto;
+    }
+    
+}

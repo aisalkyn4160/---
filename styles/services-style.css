@@ -1,0 +1,69 @@
+.services-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    row-gap: 60px;
+}
+.service-item{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+.service-img img{
+    width: 100%;
+}
+.service-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.service-price{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.service-description{
+    color: #141414;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.service-item button{
+    width: 100%;
+    padding: 20px 82px;
+}
+
+@media (max-width: 910px) {
+    .services-content{
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 35px;
+    }
+    .service-item{
+        width: 290px;
+    }
+    .service-title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .service-price{
+        font-size: 15px;
+    }
+    .service-description{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 340px) {
+    .service-item{
+        width: 100%;
+    }
+    
+}

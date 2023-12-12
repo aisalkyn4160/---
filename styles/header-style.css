@@ -1,0 +1,131 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #E8E8E8;
+}
+
+.header-top{
+    padding: 3px 0 9px;
+}
+
+.header-top .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top .nav-menu >li{
+    padding-left: 30px;
+}
+.header-top button{
+    margin-left: 30px;
+}
+
+.burger-menu{
+    width: 0px;
+    height: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 3px;
+}
+.burger-menu span{
+    width: 100%;
+    height: 3px;
+    background-color: #2C5BAD;
+    border-radius: 25%;
+}
+
+.header.open .burger-menu{
+    transform: rotate(90deg);
+    transition: all .5s;
+}
+.header-bottom{
+    background: linear-gradient(262deg, #2C5BAD -50.27%, #021955 174.07%);
+    color: #E8E8E8;
+    padding: 14px 0 16px;
+}
+
+.header-bottom .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom .mobile-icon{
+    display: none;
+}
+
+
+
+@media (max-width: 950px) {
+
+    .burger-menu{
+        width: 25px;
+        position: relative;
+    }
+    .header-top .nav-menu{
+        width: 100%;
+        background-color: #E8E8E8;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        padding: 15px 0;
+    }
+    .header-top .nav-menu >li{
+        padding-left: 15px;
+    }
+
+    .header-top button{
+        position: absolute;
+        top: 70px;
+        right: -100%;
+    }
+    
+    .header-bottom{
+        width: 100%;
+        position: absolute;
+        bottom: -235px;
+        left: -100%;
+        background: #E8E8E8;
+        color: #021955;
+        padding: 25px 0;
+    }
+    .header-bottom .contact-list{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .header-bottom .contact-list li{
+        max-width: 210px;
+    }
+    .header-bottom .social-list{
+        position: absolute;
+        right: 80px;
+        top: -75px;
+    }
+
+    .header-bottom .mobile-icon{
+        display: block;
+    }
+
+    .header-bottom .desktop-icon{
+        display: none;
+    }
+
+    .header.open .header-bottom,
+    .header.open .header-top .nav-menu{
+        left: 0;
+        transition: all .5s;
+    }
+
+    .header.open .header-top button{
+        right: 15px;
+        transition: all .5s;
+    }
+
+}

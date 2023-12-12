@@ -1,0 +1,106 @@
+.advantages{
+    background: linear-gradient(262deg, #2C5BAD -50.27%, #021955 174.07%);
+    padding: 60px 0 80px;
+}
+
+.advantages h2{
+    color: #E8E8E8;
+    text-align: center;
+}
+
+.advantages-list{
+    padding-left: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.advantages-list li{
+    position: relative;
+}
+.advantages-list img{
+    width: 100%;
+    height: 100%;
+}
+
+.advantages-list li span{
+    width: 112px;
+    position: absolute;
+    font-family:'Inter';
+    font-size: 150px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    background: linear-gradient(90deg, #E8E8E8 56.58%, rgba(232, 232, 232, 0.00) 119.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: -60px;
+    left: -50px;
+}
+.advantages-list li:first-child span{
+    width: 89px;
+    background: linear-gradient(90deg, #E8E8E8 56.58%, rgba(232, 232, 232, 0.00) 119.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.advantages-list p{
+    color: #E8E8E8;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 32px;
+}
+
+@media (max-width: 1150px) {
+    .advantages-list li span{
+        font-size: 120px;
+    }
+    
+}
+@media (max-width: 950px) {
+    .advantages h2{
+        margin-bottom: 35px;
+    }
+    .advantages-list{
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 35px;
+    }
+    
+    .advantages-list li:nth-child(2n+1){
+        align-self: flex-end;
+    }
+
+    .advantages-list li:nth-child(2n){
+        align-self: flex-start;
+    }
+    .advantages-list li:nth-child(2n) span{
+        right: 0px;
+        left: auto;
+    }
+    .advantages-list li:first-child span{
+        left: -40px;
+    }
+    .advantages-list li span{
+        width: 100px;
+        height: 145px;
+        top: -45px;
+        left: -15px;
+    }
+
+    .advantages-list p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .advantages-list li{
+        width: 248px;
+    }
+}

@@ -1,0 +1,90 @@
+.rent-a-car_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    row-gap: 60px;
+}
+.rent-a-car_item{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+.rent-a-car_image img{
+    width: 100%;
+}
+.rent-a-car_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 37px;
+}
+
+.rent-a-car_price{
+    font-size: 20px;
+    font-weight: 400;
+}
+.rent-a-car_description{
+    display: grid;
+    grid-template-columns: 1.1fr 2fr 1.7fr;
+    row-gap: 20px;
+    margin-bottom: 26px;
+}
+
+.rent-a-car_description span{
+    color: #141414;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+    border-left: 1px solid rgba(2, 25, 85, 0.5);
+}
+
+.rent-a-car_item button{
+    padding: 20px 94px 20px 92px;
+}
+
+@media (max-width: 1150px) {
+    .rent-a-car_content{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .rent-a-car_item{
+        width: 290px;
+    }
+    .rent-a-car_content{
+        row-gap: 35px;
+    }
+
+    .rent-a-car_title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .rent-a-car_price{
+        font-size: 15px;
+    }
+    .rent-a-car_description{
+        row-gap: 10px;
+        margin-bottom: 15px;
+    }
+    .rent-a-car_description span{
+        font-size: 11px;
+        padding-left: 6px;
+    }
+    .rent-a-car_content button{
+        font-size: 12px;
+        padding: 10px 90px;
+        border-radius: 4px;
+    }
+    .rent-a-car_content button svg{
+        width: 15px;
+    }
+}
+
+@media (max-width: 340px) {
+    .rent-a-car_item{
+        width: 100%;
+    }
+    
+}
