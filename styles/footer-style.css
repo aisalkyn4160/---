@@ -19,10 +19,8 @@
     color: #E8E8E8;
 }
 .footer-top .nav-menu >li:hover>a{
-    color: #E8E8E8;
-    font-weight: 800;
-
-    
+    color: #8CB734;
+    transition: color 0.5s;
 }
 .footer-top .dropdown-menu{
     top: 45px;
@@ -30,6 +28,11 @@
 }
 .footer-top svg path {
     fill: #E8E8E8;
+}
+
+.footer-top .nav-menu >li:hover svg path {
+    fill: #8CB734;
+    transition: fill 0.5s;
 }
 
 .footer-top .contacts{
