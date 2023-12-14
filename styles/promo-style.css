@@ -31,7 +31,6 @@
     background: transparent;
     border: 2px solid #E8E8E8;
     opacity: 1;
-    /* opacity: var(--swiper-pagination-bullet-inactive-opacity, .2); */
 }
 .promo .swiper-pagination-bullet-active{
     background-color: #E8E8E8;

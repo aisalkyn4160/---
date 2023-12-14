@@ -58,6 +58,7 @@
     .service-description{
         font-size: 12px;
         margin-bottom: 15px;
+        opacity: 1;
     }
 }
 

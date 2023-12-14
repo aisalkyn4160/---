@@ -62,6 +62,9 @@
     
 }
 @media (max-width: 950px) {
+    .advantages{
+        padding: 30px 0 35px;
+    }
     .advantages h2{
         margin-bottom: 35px;
     }

@@ -1,3 +1,4 @@
+// ----------------------------fix-header---------------------------
 const header = document.querySelector('.header');
 const main = document.querySelector('main');
 
@@ -36,20 +37,8 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
    
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-  
-    // breakpoints: {
-
-    //   '950': {
-    //     pagination: {
-    //       el: '.swiper-pagination',
-    //     },
-    //   },
-    // }
   });
+
 
 // ---------------------------Collapse---------------------------
 
