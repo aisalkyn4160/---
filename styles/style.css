@@ -359,6 +359,7 @@ h5{
 		font-size: 12px;
 		padding: 10px 20px;
 		border-radius: 4px;
+		gap: 10px;
 	}
 	.green-btn a{
 		gap: 10px;
